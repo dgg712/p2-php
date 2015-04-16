@@ -8,7 +8,7 @@ HTML5で既定されたimgタグのsrcset属性を使い、2倍解像度と3倍�
 3倍解像度ファイル：iPhone6Plusや、フルHDクラスのAndroid端末など
 
 srcsetの指定は、hoge.pngに対し、hoge@2x.png、hoge@3x.pngといった高解像度ファイルを用意し、
-<img src="hoge.pne" srcset="hoge@2x.png 2x,hoge@3x.png 3x" />
+&lt;<img src="hoge.pne" srcset="hoge@2x.png 2x,hoge@3x.png 3x" /&gt;
 といった感じで指定します。srcset非対応ブラウザなら今まで通りsrc属性で指定したファイルを使うので問題ありません。
 ただ、srcsetで指定したファイルが存在しないと、対応ブラウザでは画像が表示されなくなってしまうので、関数内でファイルが実在するかどうかチェックしてから指定するようにしています。これにより、段階的に高解像度ファイルを追加していくことができます。
 
